@@ -1,0 +1,15 @@
+//events posted on main thread/channel
+table events(EID INT PRIMARY KEY, UID INT, content VARCHAR(500), postedtime DATETIME);
+
+table channel(CID INT PRIMARY KEY, c_name VARCHAR(20), interest VARCHAR(20), location VARCHAR(50));
+
+table users(UID INT PRIMARY KEY, username VARCHAR(20));
+
+table part_of(CID INT, UID INT);
+
+table post(CID INT, UID INT, postedtime DATETIME, content VARCHAR(500));
+
+table posted_in(CID INT, PID INT);
+
+//for testing purposes
+table test(id int);
