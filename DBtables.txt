@@ -9,7 +9,5 @@ table part_of(CID INT, UID INT);
 
 table post(PID INT, CID INT, UID INT, postedtime DATETIME, content VARCHAR(500));
 
-table posted_in(CID INT, PID INT);
-
 //for testing purposes
 table test(id int);
